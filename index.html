@@ -7,13 +7,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
     body { margin: 0; font-family: 'Pretendard', sans-serif; background: #faf8f5; overflow: hidden; }
-    #deck { display: flex; transition: transform 0.5s ease; width: 300vw; height: 100vh; }
+    #deck { display: flex; transition: transform 0.5s ease; width: 200vw; height: 100vh; }
     .slide { width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 10%; box-sizing: border-box; }
     h1 { font-size: 3rem; line-height: 1.3; margin-bottom: 1rem; }
     h2 { font-size: 2rem; margin-bottom: 2rem; }
     .grid3 { display: flex; gap: 2rem; }
     .grid3 article { flex: 1; padding: 2rem; background: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
     .nav { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; gap: 1rem; }
+    button { padding: 10px 20px; cursor: pointer; }
 </style>
 </head>
 <body>
@@ -32,8 +33,8 @@
   </section>
 </main>
 <div class="nav">
-  <button id="prev">←</button>
-  <button id="next">→</button>
+  <button id="prev">← 이전</button>
+  <button id="next">다음 →</button>
 </div>
 <script>
     let currentSlide = 0;
